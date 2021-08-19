@@ -60,11 +60,11 @@ Para algunos de los puntos proveer imágenes.
 	*Es una solicitud que se hace para pedir la incorporación de cambios al repositorio original desde una branch.*
   - Crear un branch local y agregar cambios a dicho branch. 
   - Subir el cambio a dicho branch y crear un pull request.
-![alt text](images/cap_04.4.1.png)
-![alt text](images/cap_04.4.2.png)
+![alt text](TP01-images/cap_04.4.1.png)
+![alt text](TP01-images/cap_04.4.2.png)
   - Completar el proceso de revisión en github y mergear el PR al branch master.
-![alt text](images/cap_04.5.1.png)
-![alt text](images/cap_04.5.2.png)
+![alt text](TP01-images/cap_04.5.1.png)
+![alt text](TP01-images/cap_04.5.2.png)
 
 #### 5- Mergear código con conflictos
   - Instalar alguna herramienta de comparación. Idealmente una 3-Way:
@@ -83,12 +83,12 @@ Para algunos de los puntos proveer imágenes.
   - Hacer commit y subir el cambio a master a github.
   - En el segundo clon también agregar texto, en las mismas líneas que se modificaron el punto anterior.
   - Intentar subir el cambio, haciendo un commit y push. Mostrar el error que se obtiene.
-![alt text](images/cap_05.7.png)
+![alt text](TP01-images/cap_05.7.png)
   - Hacer pull y mergear el código (solo texto por ahora), mostrar la herramienta de mergeo como luce.
-![alt text](images/cap_05.8.png)
-![alt text](images/cap_05.8.2.png)
+![alt text](TP01-images/cap_05.8.png)
+![alt text](TP01-images/cap_05.8.2.png)
   - Resolver los conflictos del código.
-![alt text](images/cap_05.9.png)
+![alt text](TP01-images/cap_05.9.png)
   - Explicar las versiones LOCAL, BASE y REMOTE.
 	*Conformar el “three-way merge”, donde base es el antecesor (de donde partieron los cambios que luego colisionaron), remote es una versión que contiene los cambios que se le aplicaron a base y se subieron (push) al repositorio remoto; local es la versión que contiene los cambios que se le aplicaron a base pero se encuentran en el directorio local.*
   - Pushear el cambio mergeado.
@@ -96,7 +96,7 @@ Para algunos de los puntos proveer imágenes.
 #### 6- Algunos ejercicios online
   - Entrar a la página https://learngitbranching.js.org/
   - Completar los ejercicios **Introduction Sequence**
-![alt text](images/cap_06.2.png)
+![alt text](TP01-images/cap_06.2.png)
   - Opcional - Completar el resto de los ejercicios para ser un experto en Git!!!
 
 #### 7- Crear Repositorio de la materia
