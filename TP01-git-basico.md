@@ -26,22 +26,32 @@ Los pasos y referencias asumen el uso del sistema operativo Windows, en caso otr
 
 #### 2- Crear un repositorio local y agregar archivos
   - Crear un repositorio local en un nuevo directorio.
-	*git init*
+	```
+	git init
+	```
   - Agregar un archivo Readme.md, agregar algunas líneas con texto a dicho archivo.
-	*nano Readme.md*
+	```
+	nano Readme.md
+	```
   - Crear un commit y proveer un mensaje descriptivo.
-	*git commit -m "Readme.md creado"*
+	```
+	git commit -m "Readme.md creado"
+	```
 
 #### 3- Crear un repositorio remoto
   - Crear una cuenta en https://github.com
   - Crear un nuevo repositorio en dicha página (vacío)
   - Asociar el repositorio local creado en el punto 2 al creado en github.
-	*git remote add origin https://github.com/Nara00/TP1_ing_sw_III.git*
-	*git fetch*
-	*git branch -M main*
+	```
+	git remote add origin https://github.com/Nara00/TP1_ing_sw_III.git
+	git fetch
+	git branch -M main
+	```
 
   - Subir los cambios locales a github.
-	*git push -u origin main*
+	```
+	git push -u origin main
+	```
 
 #### 4- Familiarizarse con el concepto de Pull Request
 Para algunos de los puntos proveer imágenes.
@@ -59,7 +69,6 @@ Para algunos de los puntos proveer imágenes.
 #### 5- Mergear código con conflictos
   - Instalar alguna herramienta de comparación. Idealmente una 3-Way:
     - P4Merge https://www.perforce.com/downloads/helix-visual-client-p4v:
-![alt text](p4merge.png)
     - Se puede omitir registración. Instalar solo opción Merge and DiffTool.
 
 - ByondCompare trial version https://www.scootersoftware.com/download.php
@@ -67,7 +76,9 @@ Para algunos de los puntos proveer imágenes.
     - https://www.scootersoftware.com/support.php?zz=kb_vcs
     - https://medium.com/@robinvanderknaap/using-p4merge-with-tortoisegit-87c1714eb5e2
   - Clonar en un segundo directorio el repositorio creado en github.
-	*git clone https://github.com/Nara00/TP1_ing_sw_III.git*
+	```
+	git clone https://github.com/Nara00/TP1_ing_sw_III.git
+	```
   - En el clon inicial, modificar el Readme.md agregando más texto.
   - Hacer commit y subir el cambio a master a github.
   - En el segundo clon también agregar texto, en las mismas líneas que se modificaron el punto anterior.
