@@ -268,7 +268,7 @@ Este es un sistema compuesto por:
 - Una cola de Redis que recolecta nuevos votos
 - Un trabajador .NET o Java que consume votos y los almacena en...
 - Una base de datos de Postgres respaldada por un volumen de Docker
-- Una aplicación web Node.js que muestra los resultados de la votación en tiempo real.
+- Una aplicación web Node.js que muestra los dados de la votación en tiempo real.
 
 Pasos:
 - Clonar el repositorio https://github.com/dockersamples/example-voting-app
