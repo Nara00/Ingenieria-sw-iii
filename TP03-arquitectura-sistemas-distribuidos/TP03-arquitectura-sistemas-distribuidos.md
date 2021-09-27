@@ -57,7 +57,7 @@ Si nuestro sistem distribuido está compuesto de varios componentes corriendo co
 
 **Resolución**
 
-# Puertos abiertos: 5000
+# Puertos abiertos: 5000 VER
 ```bash
 CONTAINER ID   IMAGE                       COMMAND                  CREATED             STATUS             PORTS                                       NAMES
 e53e0c480d88   redis:alpine                "docker-entrypoint.s…"   About an hour ago   Up About an hour   6379/tcp                                    db
@@ -254,7 +254,7 @@ local     docker_redis_data
 
 **Resolución**
 
-*Creo el sistema del punto 1 basándose a lo especificado en el archivo .yaml. Es decir, creó (y puso en ejecución) los contenedores `docker_app_1` (equivalente a web) y `docker_db_1` (equivalente a db), creo una red del tipo bridge denominada `docker_default` (equivalente a mybridge) que conecta la app web con la base de datos y por último asignó un volumen denominado `docker_redis_data`*
+*Creó el sistema del punto 1 basándose a lo especificado en el archivo .yaml. Es decir, creó (y puso en ejecución) los contenedores `docker_app_1` (equivalente a web) y `docker_db_1` (equivalente a db), creo una red del tipo bridge denominada `docker_default` (equivalente a mybridge) que conecta la app web con la base de datos y por último asignó un volumen denominado `docker_redis_data`*
 
   - Desde el directorio donde se encuentra el archivo `docker-compose.yaml` ejecutar:
   ```bash
