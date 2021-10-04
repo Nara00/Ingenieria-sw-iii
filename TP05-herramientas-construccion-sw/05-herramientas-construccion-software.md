@@ -279,7 +279,7 @@ Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
         at java.lang.ClassLoader.loadClass(Unknown Source)
         ... 1 more
 ```
-# Conclusiones
+*Aún añadiendo las dependencias en el `pom.xml` la clase que se intenta importar (LoggerFactory) no es encontrada porque esta especificación es útil en el momento de compilación (lo que justifica que antes de añadir las dependencias a `pom.xml` no era posible la compilación) pero al momento de linkear la clase no puede ser alcanzada, tenemos dos posibilidades: hacer un ejecutable "gordo", que no solo contenga nuestra aplicación sino también las librerias, algo así como un linkeo estático, es lo que se logra con el código del punto siguiente; la otra alternativa es optar por un linkeo dinámico, con este vamos a tener que especificar de alguna forma (como puede ser en el comando de ejecución) donde están los jar's que tiene que acceder para ejecutar correctamente nuestro proyecto.*
 
 - Implementar la opción de uber-jar: https://maven.apache.org/plugins/maven-shade-plugin/
 
@@ -441,7 +441,7 @@ make run
 
 - *cookiecutter* proporciona una interfaz gráfica de usuario para descubrir plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Crea proyectos a partir de plantillas de proyectos.
 
-- *make* Utilidad para construir y mantener grupos de programas. El propósito de la utilidad make es determinar automáticamente qué partes de un programa necesitan ser recompiladas y emitir los comandos para recompilarlas. Puede usar make con cualquier lenguaje de programación cuyo compilador se pueda ejecutar con un comando de shell. Puede usarlo para describir cualquier tarea en la que algunos archivos deban actualizarse automáticamente desde otros siempre que los otros cambien. Debe especificar un archivo makefile que describa las relaciones entre los archivos en su programa y los estados de los comandos para actualizar cada archivo. En un programa, normalmente el archivo ejecutable se actualiza a partir de archivos objeto, que a su vez se compilan mediante la compilación de archivos fuente.
+- *make* Utilidad para construir y mantener grupos de programas. El propósito de la utilidad make es determinar automáticamente qué partes de un programa necesitan ser recompiladas y emitir los comandos para recompilarlas. Puede usar make con cualquier lenguaje de programación cuyo compilador se pueda ejecutar con un comando de shell. Puede usarlo para describir cualquier tarea en la que algunos archivos deban actualizarse automáticamente desde otros siempre que los otros cambien. Debe especificar un archivo makefile que describa las relaciones entre los archivos en su programa y los estados de los comandos para actualizar cada archivo. En un programa, normalmente el archivo ejecutable se actualiza a partir de archivos objeto, que a su vez se compilan mediante la compilación de archivos fuente. Se usa para compilar y likear codigo, hace más facil la compilación.
   
   En nuestro caso:
 ```make
