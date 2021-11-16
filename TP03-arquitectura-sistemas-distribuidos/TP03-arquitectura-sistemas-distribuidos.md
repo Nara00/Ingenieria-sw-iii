@@ -57,7 +57,8 @@ Si nuestro sistem distribuido está compuesto de varios componentes corriendo co
 
 **Resolución**
 
-# Puertos abiertos: 5000 VER
+Puertos abiertos: 5000 VER
+
 ```bash
 CONTAINER ID   IMAGE                       COMMAND                  CREATED             STATUS             PORTS                                       NAMES
 e53e0c480d88   redis:alpine                "docker-entrypoint.s…"   About an hour ago   Up About an hour   6379/tcp                                    db

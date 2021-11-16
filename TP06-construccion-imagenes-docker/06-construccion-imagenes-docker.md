@@ -295,7 +295,6 @@ HEALTHCHECK --interval=1m --timeout=3s CMD wget -q -T 3 -s http://localhost:8080
 
 *La principal diferencia entre este dockerfile y el anterior es que con este, cuando ejecutemos el build, primero se contruye la applicación (primer sección lógica) y después se usan los ejecutables obtenidos para la creación de la imagen. En el caso anterior la construcción de la aplicación iba por nuestra cuenta y traíamos al contexto de la imagen a contruir los ejecutables .jar ya existentes en nuestro filesystem local.*
 
-# CONSULTA: LO QUE PUSIMOS EN TMP DE LA PRIMER PARTE DESAPARECE LUEGO DE LA CREACIÓN DE LA IMAGEN??
 
 #### 4- Python Flask
   - Utilizar el código que se encuentra en la carpeta `./proyectos/python-flask`
@@ -316,7 +315,6 @@ docker-compose up -d
   ```
   Esto indica que se debe construir una imagen de acuerdo a lo especificado en el archivo `Dockerfile` y se usa como contexto el directorio actual.
 
-# EN QUE ORDEN SE EJECUTAN LAS KEYS DEL DOCKER COMPOSE??
 
 #### 5- Imagen para aplicación web en Nodejs
   - Crear una la carpeta `trabajo-practico-06/nodejs-docker`
