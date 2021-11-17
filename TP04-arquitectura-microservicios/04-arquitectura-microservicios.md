@@ -221,4 +221,4 @@ A estas se les asignan espacios de memoria temporales (tmpfs), por lo que al dar
 
 **Resolución**
 
-# Generalmente interfaces restful que es un URL que devuelve un jso, xml o texto; o gRPC para alta performance
+Generalmente interfaces restful que es un URL que devuelve un json, xml o texto; o gRPC para alta performance

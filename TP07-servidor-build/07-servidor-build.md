@@ -74,7 +74,7 @@ cat ~/jenkins/secrets/initialAdminPassword
 
     - Analizamos las opciones de administración de Jenkins.
 
-    Se encuentra la administración de plugins, le podemos agregar funcinoalidad a la herramienta mediante estos.
+    Se encuentra la administración de plugins, le podemos agregar funcionalidad a la herramienta mediante estos.
 
 #### 3- Instalando Plugins y configurando herramientas
   - En Administrar Jenkins vamos a la sección de Administrar Plugins

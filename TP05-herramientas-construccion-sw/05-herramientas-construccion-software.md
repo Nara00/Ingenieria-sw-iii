@@ -84,10 +84,10 @@ Este trabajo práctico corresponde a la unidad Nº: 3 (Libro Continuous Delivery
     *Maneja el deployment del proyecto*
   - clean
 
-    *Maneja la limpieza del proyecto, elimina los arcivos generados.*
+    *Maneja la limpieza del proyecto, elimina los archivos generados.*
   - site
 
-    *Maneja la creación de el sitio web del proyecto.*
+    *Maneja la creación del sitio web del proyecto.*
   - Referencia: http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Build_Lifecycle_Basics
 - Comprender las fases de un ciclo de vida, por ejemplo, default:
 
@@ -138,7 +138,7 @@ mvn clean install
 
 - Sacar conclusiones del resultado
 
-*Este comando ejecuta la fase clean y luego compienza la compilación desde un estado limpio. Como resultado se instalaron una serie de archivos jar desde el repositorio centrar y se creó el proyecto maven y el ejecuteble .jar correspondiente a este.*
+*Este comando ejecuta la fase clean y luego compienza la compilación desde un estado limpio. Como resultado se instalaron una serie de archivos jar desde el repositorio central y se creó el proyecto maven y el ejecuteble .jar correspondiente a este.*
 
 #### 4- Maven Continuación
 
@@ -441,7 +441,7 @@ make run
 
 - *cookiecutter* proporciona una interfaz gráfica de usuario para descubrir plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Crea proyectos a partir de plantillas de proyectos.
 
-- *make* Utilidad para construir y mantener grupos de programas. El propósito de la utilidad make es determinar automáticamente qué partes de un programa necesitan ser recompiladas y emitir los comandos para recompilarlas. Puede usar make con cualquier lenguaje de programación cuyo compilador se pueda ejecutar con un comando de shell. Puede usarlo para describir cualquier tarea en la que algunos archivos deban actualizarse automáticamente desde otros siempre que los otros cambien. Debe especificar un archivo makefile que describa las relaciones entre los archivos en su programa y los estados de los comandos para actualizar cada archivo. En un programa, normalmente el archivo ejecutable se actualiza a partir de archivos objeto, que a su vez se compilan mediante la compilación de archivos fuente. Se usa para compilar y likear codigo, hace más facil la compilación.
+- *make* Utilidad para construir y mantener grupos de programas. El propósito de la utilidad make es determinar automáticamente qué partes de un programa necesitan ser recompiladas y emitir los comandos para recompilarlas. Puede usar make con cualquier lenguaje de programación cuyo compilador se pueda ejecutar con un comando de shell. Puede usarlo para describir cualquier tarea en la que algunos archivos deban actualizarse automáticamente desde otros siempre que los otros cambien. Debe especificar un archivo makefile que describa las relaciones entre los archivos en su programa y los estados de los comandos para actualizar cada archivo. En un programa, normalmente el archivo ejecutable se actualiza a partir de archivos objeto, que a su vez se compilan mediante la compilación de archivos fuente. Se usa para compilar y linkear codigo, hace más facil la compilación.
   
   En nuestro caso:
 ```make
